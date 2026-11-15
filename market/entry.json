@@ -1,0 +1,15 @@
+{
+  "name": "dsh-demian-drama-strip",
+  "owner": "demian-1013",
+  "url": "https://github.com/demian-1013/dsh-demian-drama-strip",
+  "category": "skill",
+  "description": {
+    "en": "Turns a short-drama episode into a shot-by-shot storyboard and a shootable screenplay. One representative frame per shot only ever gives composition, so camera moves and subject motion come from ffmpeg 4fps frame-diff contact sheets; luma jumps (signalstats YAVG) locate transitions and flashbacks where blackdetect misses the fade-in cut; hard subtitles are read from a cropped bottom-band sheet instead of a lossy strip OCR; fight and crowd scenes get their own sampling rates. Scripts follow Kenny SOP 1.7.2 strict mode and are machine-checked for length, scene count, consecutive shot lines, and OS/VO ratio. Requires ffmpeg; no network, no credentials.",
+    "zh": "把一个短剧/短视频扒成「运镜分镜表 + 可拍摄剧本」。每个镜头只取一帧只能读构图，运镜和主体运动必须靠 ffmpeg 4fps 连拍拼图做帧间差分；用 signalstats 的亮度跳变定位转场与闪回（blackdetect 会漏掉淡出型回忆切入）；硬字幕从底部条带裁切拼图读，比条带 OCR 准；打戏与群戏各有自己的采样率。剧本按 Kenny SOP 1.7.2 严格版产出，并机器自检字数、场次、连续画面行、OS/VO 占比。依赖 ffmpeg，不联网、不读凭据。"
+  },
+  "npm": "",
+  "version": "0.1.0",
+  "install": "dsh plugin --profile web add github:demian-1013/dsh-demian-drama-strip",
+  "capabilities": [],
+  "capabilityRedLines": []
+}
