@@ -1,0 +1,42 @@
+{
+  "name": "dsh-demian-drama-strip",
+  "version": "0.1.0",
+  "description": "Demian Drama Strip — turn a short drama episode into a shot-by-shot storyboard and a production-ready screenplay (扒剧：把短剧扒成分镜表 + 可拍摄剧本).",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "deepseek",
+    "harness",
+    "dsh",
+    "dsh-plugin",
+    "skill",
+    "short-drama",
+    "storyboard",
+    "screenplay",
+    "ffmpeg",
+    "baju"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./skills/drama-strip/SKILL.md": "./skills/drama-strip/SKILL.md"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "skills",
+    "locale",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
+}
